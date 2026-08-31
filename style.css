@@ -1,3 +1,73 @@
+:root {
+  /* =========================
+     BACKGROUND
+  ========================= */
+  --bg-primary: #070B14;
+  --bg-secondary: #0D1424;
+  --bg-tertiary: #111B2E;
+
+  /* =========================
+     PRIMARY - AZUL
+  ========================= */
+  --primary: #3B82F6;
+  --primary-light: #60A5FA;
+  --primary-dark: #2563EB;
+
+  /* =========================
+     TEXT
+  ========================= */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  /* =========================
+     BORDERS
+  ========================= */
+  --border: #1E293B;
+  --border-light: #334155;
+
+  /* =========================
+     EFFECTS
+  ========================= */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-blue: 0 0 30px rgba(59, 130, 246, 0.20);
+
+  /* =========================
+     GRADIENTS
+  ========================= */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #2563EB,
+    #3B82F6
+  );
+
+  --gradient-text: linear-gradient(
+    90deg,
+    #60A5FA,
+    #3B82F6
+  );
+
+  /* =========================
+     STATUS
+  ========================= */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  /* =========================
+     BORDER RADIUS
+  ========================= */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* =========================
+     TRANSITIONS
+  ========================= */
+  --transition: 0.3s ease;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +79,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: var(--bg-primary);
 }
 
 header {
@@ -26,7 +96,7 @@ header {
     justify-content: space-around;
     align-items: center;
     backdrop-filter: blur(5px);
-    color: #fff;
+    color: var(--text-primary);
     padding: 10px;
     font-family: 'JetBrains Mono', monospace;
 }
@@ -39,14 +109,14 @@ header {
 }
 
 .nav-links a {
-    color: #fff;
+    color: var(--text-muted);
     text-decoration: none;
     font-size: 20px;
-    transition: 0.3s;
+    transition: var(--transition);
 }
 
 .nav-links a:hover {
-  color: rgb(187, 0, 0);
+  color: var(--text-primary);
 }
 
 .logo {
@@ -54,16 +124,16 @@ header {
 }
 
 .logo span {
-    color: rgb(187, 0, 0);
+    color: var(--primary);
 }
 
 .logo h1 {
-    color: #fff;
+    color: var(--text-primary);
 }
 
 section {
-    padding: 200px 0;
-    color: #fff;
+    padding: 290px 0;
+    color: var(--text-primary);
 }
 
 #home {
@@ -92,12 +162,12 @@ section {
 }
 
 .hero span {
-    color:rgb(187, 0, 0);
+    color: var(--primary);
 }
 
 .hero p {
     max-width: 600px;
-    color: gray;
+    color: var(--text-secondary);
     font-size: 18px;
     margin-bottom: 30px;
     font-family: "Inter", sans-serif;
@@ -113,22 +183,22 @@ section {
 .mainbtn a {
     padding: 13px 22px;
     border-radius: 8px;
-    border: 1px solid rgb(187, 0, 0);
-    transition: 0.3s;
+    border: 1px solid var(--primary);
+    transition: var(--transition);
     cursor: pointer;
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .btn-primary {
-    background: rgb(187, 0, 0);
+    background: var(--primary);
 }
 
 .btn-primary:hover {
-    background: rgba(187, 0, 0, 0.5);
+    background: var(--primary-light);
     transform: translateY(-3px);
 }
 
 .btn-secundary:hover {
-    background: rgb(187, 0, 0);
+    background: var(--primary-light);
 }
 
