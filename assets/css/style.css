@@ -315,3 +315,22 @@ section {
     transform: translateY(-8px);
     box-shadow: var(--shadow-blue);
 }
+
+#projetos .container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--text-secondary);
+}
+
+#projetos .container span {
+    color: var(--text-primary);
+    font-family: "jetbrains mono", monospace;
+}
+
+#projetos .container small {
+    color: var(--text-secondary);
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+    display: block;
+}
