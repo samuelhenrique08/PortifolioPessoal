@@ -1,71 +1,68 @@
 :root {
-  /* =========================
+    /* =========================
      BACKGROUND
   ========================= */
-  --bg-primary: #070B14;
-  --bg-secondary: #0D1424;
-  --bg-tertiary: #111B2E;
+    --bg-primary: #070B14;
+    --bg-secondary: #0D1424;
+    --bg-tertiary: #111B2E;
 
-  /* =========================
+    /* =========================
      PRIMARY - AZUL
   ========================= */
-  --primary: #3B82F6;
-  --primary-light: #60A5FA;
-  --primary-dark: #2563EB;
+    --primary: #3B82F6;
+    --primary-light: #60A5FA;
+    --primary-dark: #2563EB;
 
-  /* =========================
+    /* =========================
      TEXT
   ========================= */
-  --text-primary: #F8FAFC;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
 
-  /* =========================
+    /* =========================
      BORDERS
   ========================= */
-  --border: #1E293B;
-  --border-light: #334155;
+    --border: #1E293B;
+    --border-light: #334155;
+    --border-ultralight: #9ec6ff;
 
-  /* =========================
+    /* =========================
      EFFECTS
   ========================= */
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-  --shadow-blue: 0 0 30px rgba(59, 130, 246, 0.20);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --shadow-blue: 0 0 30px rgba(59, 130, 246, 0.20);
 
-  /* =========================
+    /* =========================
      GRADIENTS
   ========================= */
-  --gradient-primary: linear-gradient(
-    135deg,
-    #2563EB,
-    #3B82F6
-  );
+    --gradient-primary: linear-gradient(135deg,
+            #2563EB,
+            #3B82F6);
 
-  --gradient-text: linear-gradient(
-    90deg,
-    #60A5FA,
-    #3B82F6
-  );
+    --gradient-text: linear-gradient(90deg,
+            #60A5FA,
+            #3B82F6);
 
-  /* =========================
+    /* =========================
      STATUS
   ========================= */
-  --success: #22C55E;
-  --warning: #F59E0B;
-  --danger: #EF4444;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
 
-  /* =========================
+    /* =========================
      BORDER RADIUS
   ========================= */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
 
-  /* =========================
+    /* =========================
      TRANSITIONS
   ========================= */
-  --transition: 0.3s ease;
+    --transition: 0.3s ease;
 }
 
 * {
@@ -87,7 +84,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,0.09);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
 }
 
 .navbar {
@@ -115,7 +112,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .logo {
@@ -314,6 +311,7 @@ section {
 .skill:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-blue);
+    border: 0.5px solid var(--border-ultralight);
 }
 
 #projetos .container h2 {
@@ -385,8 +383,8 @@ article {
 }
 
 .project-content .project-links a {
-   color: var(--primary-dark);
-   font-family: 'inter', sans-serif;
+    color: var(--primary-dark);
+    font-family: 'inter', sans-serif;
 }
 
 
@@ -405,4 +403,63 @@ article {
 article:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-blue);
+    border: 0.5px solid var(--border-ultralight);
+}
+
+.experience .container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--text-secondary);
+}
+
+.experience .container span {
+    color: var(--text-primary);
+    font-family: "jetbrains mono", monospace;
+}
+
+.experience .container small {
+    color: var(--text-secondary);
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.experience article {
+    height: 225px;
+    padding: 25px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h3 {
+        color: var(--primary-light);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 25px;
+    }
+
+    & p {
+        font-family: "Inter", sans-serif;
+        padding-bottom: 15px;
+    }
+
+    & .tags span {
+        border: solid 0.5px var(--border-light);
+        border-radius: 5px;
+        padding: 4px;
+        font-size: 12px;
+        background-color: var(--bg-tertiary);
+        font-family: "jetbrains mono", monospace;
+    }
+
+    & .timeline-info {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+
+        & span {
+            font-family: "Space Grotesk", sans-serif;
+        }
+    }
 }
