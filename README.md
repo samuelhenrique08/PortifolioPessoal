@@ -38,13 +38,16 @@ portfolio/
 │
 ├── index.html
 │
-├── style.css
-│
 ├── assets/
 │   ├── img/
 │   │   ├── icon.png
 │   │   └── deyse.png
 │   │
+│   ├── css
+│   │   └── style.css
+│   │
+│   ├── js
+│   │   └── script.js
 │   └── ...
 │
 └── README.md
