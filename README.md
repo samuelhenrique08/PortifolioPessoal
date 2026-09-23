@@ -43,10 +43,10 @@ portfolio/
 │   │   ├── icon.png
 │   │   └── deyse.png
 │   │
-│   ├── css
+│   ├── css/
 │   │   └── style.css
 │   │
-│   ├── js
+│   ├── js/
 │   │   └── script.js
 │   └── ...
 │
